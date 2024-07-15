@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import icon from '../image/icon.png'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import './App.css'
 import AxiosService from '../Helper/AxiosService';
 import { toast } from 'react-toastify';
@@ -16,15 +16,13 @@ function ResetPassword() {
   };
 
   const [password,setPassword] = useState("")
-
-  const{randomString,expirationTimestamp}=useParams();
     let navigate = useNavigate()
 
     const resetpassword = async(e)=>{
         e.preventDefault()
         setLoading(true)
         try {
-            let res = await AxiosService.post(`/user/reset-password/${randomString}/${expirationTimestamp}`,{
+            let res = await AxiosService.post(`/user/reset-password`,{
                 newPassword:password
             })
 

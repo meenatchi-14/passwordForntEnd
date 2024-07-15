@@ -19,6 +19,7 @@ const forgetpassword = async(e)=>{
         let res = await AxiosService.post('/user/forget-password',{
             email
         })
+        navigate("/reset-password")
         if(res.status==201)
         {
             toast.success("Reset link sent successfully to your email.please check the email ")
