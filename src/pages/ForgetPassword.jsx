@@ -16,7 +16,7 @@ const forgetpassword = async(e)=>{
     e.preventDefault()
     setLoading(true)
     try {
-        let res = await AxiosService.post('/user/forget-password',{
+        var res = await AxiosService.post('/user/forget-password',{
             email
         })
         navigate("/reset-password")
