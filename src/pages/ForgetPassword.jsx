@@ -5,8 +5,6 @@ import './App.css'
 import AxiosService from '../Helper/AxiosService'
 import { toast } from 'react-toastify'
 
-
-
 function ForgetPassword() {
 let navigate = useNavigate()
 

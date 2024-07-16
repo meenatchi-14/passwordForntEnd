@@ -21,7 +21,7 @@ function App() {
 
 <Route path='/forgetpassword' element={<ForgetPassword/>}/>
 
-<Route path='/reset-password' element={<ResetPassword/>}/>
+<Route path='/reset-password/:randomString/:expirationTimestamp' element={<ResetPassword/>}/>
 
 <Route path='*' element={<Login/>}/>
 
