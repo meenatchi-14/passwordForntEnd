@@ -17,14 +17,14 @@ function ResetPassword() {
 
   const [password,setPassword] = useState("")
     
-    const{randomString,expirationTimestamp}=useParams();
+    const{randomString,expitationTimestamp}=useParams();
     let navigate = useNavigate()
 
     const resetpassword = async(e)=>{
         e.preventDefault()
         setLoading(true)
         try {
-          let res = await AxiosService.post(`/user/reset-password/${randomString}/${expirationTimestamp}`,{
+          let res = await AxiosService.post(`/user/reset-password/${randomString}/${expitationTimestamp}`,{
                 newPassword:password
             })
 
