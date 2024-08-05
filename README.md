@@ -4,7 +4,7 @@
 ## frontEnd:
 
 - [@FrontEnd-gitHub](https://github.com/meenatchi-14/passwordForntEnd.git )
-- [@Netlify](https://guileless-bienenstitch-7cfe80.netlify.app/)
+- [@Netlify](https://magenta-tanuki-c548b5.netlify.app/)
 
 ## BackEnd:
 
