@@ -82,11 +82,11 @@ function Login() {
               
             /> 
             
-            <span id='sp' style={{marginRight:"45px",color:'#157ae1' }}>
+            <span className='span' style={{marginRight:"45px",color:'#157ae1' }}>
               Show Password
             </span>
             &nbsp; &nbsp;
-            <span id='sp' style={{ color: '#157ae1', cursor: 'pointer' }} onClick={()=>navigate('/forgetpassword')}>
+            <span className='span' style={{ color: '#157ae1', cursor: 'pointer' }} onClick={()=>navigate('/forgetpassword')}>
               Forgot Password ?{' '}
             </span>
 

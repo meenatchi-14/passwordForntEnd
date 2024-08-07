@@ -1,17 +1,10 @@
 * {
-    box-sizing: border-box;
+   padding: 0px;
+   margin: 0px;
   }
-  html,
-  body,
-  .wrapper {
-    height: 100%;
-  }
+
   
-  @keyframes gradient {
-    100% {
-      background-size: 4000px 1000px;
-    }
-  }
+ 
      /*---------------- login and signup Css starts  here ----------- */
   
   body {
@@ -20,17 +13,11 @@
     margin: 0;
     padding: 0 24px;
     background-image:url("/src/image/bg.jpg") !important  ;
-    background-size: 2600px 1100px;
+    background-size: 2000px 1000px;
     background-position: -500px 0;
     color: #f9f9f9 !important;
     font-family: "Euclid Circular A";
     /* animation: gradient 10s infinite alternate linear; */
-  }
-  
-  @media (width >= 500px) {
-    body {
-      padding: 0;
-    }
   }
   
   .login {
@@ -39,10 +26,10 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 90%;
+    width: 80%;
     padding: 70px 30px 44px;
     border-radius: 22px;
-    background:radial-gradient(circle,#3c3c3f,#1f1f20);
+    background:radial-gradient(circle,#3c3c3f,#2e2e2f);
     text-align: center;
   }
   
@@ -64,19 +51,19 @@
   .avatar > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:fill;
     border-radius: 50%;
-    border: 4px solid #161616;
+    border: 5px solid #161616;
   }
   
   .login > h2 {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0 0 4px;
   }
   
   .login > h3 {
-    color: rgba(255, 255, 255, 0.38);
+    color: #e4dcdc61;
     margin: 0 0 30px;
     font-weight: 500;
     font-size: 16px;
@@ -85,14 +72,14 @@
   
   .login-form {
     display: grid;
-    gap: 16px;
+    gap: 15px;
     place-items: center;
     width: 100%;
     margin: 0;
   }
   
   .textbox {
-    width: 100%;
+    width: 95%;
     position: relative;
   }
   
@@ -101,7 +88,11 @@
     top: 50%;
     left: 16px;
     translate: 0 -50%;
-    color: rgba(231, 223, 223, 0.38);
+    color: #040404c1;
+  }
+  .span{
+    font-size:15px;
+
   }
   
   .login-form input,
@@ -122,18 +113,10 @@
     padding: 0 20px 0 50px;
     color: inherit;
   }
-  
-  .login-form input:focus {
-    border-color: #157ae1;
-  }
-  
-  .login-form input:focus ~ span {
-    color: #157ae1;
-  }
-  
-  .login-form button {
+
+    .login-form button {
     cursor: pointer;
-    background: #157ae1;
+    background: hsl(210, 64%, 59%);
     color: #f9f9f9;
     border: 0;
     font-weight: 600;
@@ -141,42 +124,29 @@
   }
   
   .login-form a {
-    color: #157ae1;
+    color:  hwb(210 25% 9%);
     font-size: 16px;
     text-align: left;
     text-decoration: none;
   }
   
-     /*---------------- login and signup Css ends  here ----------- */
+     /*---------------- Home Css starts  here ----------- */
   
-  
-  
-  
-     /*---------------- Dashboard Css starts  here ----------- */
-  
-  
- 
-  
-  
-  @font-face {
-    font-family: Clip;
-    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-  }
-
   .sign {
-    position: absolute;
+    position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
+    margin-top: 0px;
     background-image: radial-gradient(
       ellipse 50% 35% at 50% 50%,
-      #6b1839,
+      hsl(336, 36%, 60%),
       transparent
     );
     transform: translate(-50%, -50%);
-    letter-spacing: 2;
+    letter-spacing:2;
     left: 50%;
     top: 50%;
     font-family: "Clip";
@@ -188,208 +158,21 @@
       0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
     animation: shine 2s forwards, flicker 3s infinite;
   }
-  
-  @keyframes blink {
-    0%,
-    22%,
-    36%,
-    75% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-    28%,
-    33% {
-      color: #ff65bd;
-      text-shadow: none;
-    }
-    82%,
-    97% {
-      color: #ff2483;
-      text-shadow: none;
-    }
-  }
-  
-  .flicker {
-    animation: shine 2s forwards, blink 3s 2s infinite;
-  }
-  
-  .fast-flicker {
-    animation: shine 2s forwards, blink 10s 1s infinite;
-  }
-  
-  @keyframes shine {
-    0% {
-      color: #6b1839;
-      text-shadow: none;
-    }
-    100% {
-      color: #ffe6ff;
-      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-    }
-  }
-  
-  @keyframes flicker {
-    from {
-      opacity: 1;
-    }
-  
-    4% {
-      opacity: 0.9;
-    }
-  
-    6% {
-      opacity: 0.85;
-    }
-  
-    8% {
-      opacity: 0.95;
-    }
-  
-    10% {
-      opacity: 0.9;
-    }
-  
-    11% {
-      opacity: 0.922;
-    }
-  
-    12% {
-      opacity: 0.9;
-    }
-  
-    14% {
-      opacity: 0.95;
-    }
-  
-    16% {
-      opacity: 0.98;
-    }
-  
-    17% {
-      opacity: 0.9;
-    }
-  
-    19% {
-      opacity: 0.93;
-    }
-  
-    20% {
-      opacity: 0.99;
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    26% {
-      opacity: 0.94;
-    }
-  
-    28% {
-      opacity: 0.98;
-    }
-  
-    37% {
-      opacity: 0.93;
-    }
-  
-    38% {
-      opacity: 0.5;
-    }
-  
-    39% {
-      opacity: 0.96;
-    }
-  
-    42% {
-      opacity: 1;
-    }
-  
-    44% {
-      opacity: 0.97;
-    }
-  
-    46% {
-      opacity: 0.94;
-    }
-  
-    56% {
-      opacity: 0.9;
-    }
-  
-    58% {
-      opacity: 0.9;
-    }
-  
-    60% {
-      opacity: 0.99;
-    }
-  
-    68% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.9;
-    }
-  
-    72% {
-      opacity: 0.95;
-    }
-  
-    93% {
-      opacity: 0.93;
-    }
-  
-    95% {
-      opacity: 0.95;
-    }
-  
-    97% {
-      opacity: 0.93;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
+
   
   /* -------logout button ------- */
   
   
   
   #log {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background: rgba(196, 8, 124, 0.439);
-    font-family: "Montserrat", sans-serif;
-    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    border: none;
+    
    }
-   
-  #log:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: #c5c221f3;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-   }
-  #log:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-   }
-   
   #log span {
     text-align: center;
     text-decoration: none;
@@ -408,35 +191,8 @@
     animation: scaleUp 0.3s ease-in-out;
    }
    
-   @keyframes scaleUp {
-    0% {
-     transform: scale(1);
-    }
    
-    50% {
-     transform: scale(0.95);
-    }
-   
-    100% {
-     transform: scale(1);
-    }
-  }
-  .wel {
-    font-size: 8vw;
-    @keyframes reveal {
-      80%{
-        letter-spacing: 8px;
-      }
-      100% {
-        background-size: 300% 300%;
-      }
-    }
-    @keyframes glow {
-      40% {
-        text-shadow: 0 0 8px #000;
-      }
-    }
-  }
+  
    
   
   /*---------------- Dashboard Css ends  here ----------- */
