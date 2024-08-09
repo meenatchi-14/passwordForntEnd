@@ -2,11 +2,6 @@
    padding: 0px;
    margin: 0px;
   }
-
-  
- 
-     /*---------------- login and signup Css starts  here ----------- */
-  
   body {
     display: grid;
     place-items: center;
@@ -16,8 +11,6 @@
     background-size: 2000px 1000px;
     background-position: -500px 0;
     color: #f9f9f9 !important;
-    font-family: "Euclid Circular A";
-    /* animation: gradient 10s infinite alternate linear; */
   }
   
   .login {
@@ -36,6 +29,16 @@
   @media (width >= 450px) {
     .login {
       width: 380px;
+    }
+    .avatar {
+      margin: 0 ;
+    }
+    .login-form {
+      display: grid;
+      gap: 5px;
+      place-items: center;
+      width: 90%;
+      margin: 0;
     }
   }
   
@@ -129,10 +132,10 @@
     text-align: left;
     text-decoration: none;
   }
-  
+
      /*---------------- Home Css starts  here ----------- */
   
-  .sign {
+     .sign {
     position:absolute;
     display: flex;
     justify-content: center;
@@ -159,10 +162,7 @@
     animation: shine 2s forwards, flicker 3s infinite;
   }
 
-  
   /* -------logout button ------- */
-  
-  
   
   #log {
     position: absolute;
@@ -231,31 +231,5 @@
   } 
 
 
-  @media only screen and (max-width: 767px) {
-    canvas {
 
-width:470px;
-height: 1150px;
-margin-left: -50px;
-
-
-      
-    }
-
-    .wel{
-      font-size: 70px;
-      margin-top: 40px;
-    }
-    #sp{
-      width: 120px;
-      font-size: 15px;
-      padding-right: 2px;
-
-    }
-    .login{
-
-      width:370px;
-    }
-    
-    /* Additional styles for other elements if needed */
-  }
+  
